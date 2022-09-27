@@ -17,11 +17,11 @@ person.tuple[1] = "Two";
 person.tuple.push("Typescript");//DEMERIT
 console.log(person.tuple);
 const handler = {
-    get: function(target,property)
+    get: function(target:any,property:any)
     {
         return property in  target? target[property]: 'Not exist'
     },
-    set: function(target,property, value)
+    set: function(target:any,property:any, value:any)
     {
         typeof value==="number"?Reflect.set(target,property,value):(value.length>2)
         ?Reflect.set(target,property,value):null;

@@ -1,8 +1,9 @@
-function Add(num1, num2) {
+"use strict";
+function Add2(num1, num2) {
     return num1 + num2;
 }
 var Combine;
-Combine = Add;
+Combine = Add2;
 console.log(Combine(2, 3));
 function combine(input1, input2, resultConversion) {
     var result;

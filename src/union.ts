@@ -1,11 +1,11 @@
 type Combinable = number|string;
 type conversionType = 'as-number'|'as-text';
-function Add(num1:number,num2:number)
+function Add2(num1:number,num2:number)
 {
     return num1+num2;
 }
 let Combine:(num1:number,num2:number)=>number;
-Combine = Add;
+Combine = Add2;
 console.log(Combine(2,3));
 function combine(input1:Combinable,input2:Combinable,resultConversion:conversionType)
 {
